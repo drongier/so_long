@@ -9,6 +9,8 @@
    -Gestion de keybord input et mouse input
    -Etc..
 
+## Checklist so_long
+
 1) Lecture de la map
 2) Check errors
 3) Initialisation de minilibx
