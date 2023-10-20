@@ -2,7 +2,7 @@
 
 ## Avant de commencer 
 
-1) Decouverte et apprentissage de Minilibx
+1) Decouverte et apprentissage de Minilibx  
    -Afficher une fenetre graphique \n  
    -Afficher un pixel sur la fenetre  
    -Afficher un fichier XPM sur la fenetre  
