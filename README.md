@@ -1,6 +1,6 @@
 # so_long
 
-## Avant de commencer 
+## 💡 Avant de commencer
 
 1) Decouverte et apprentissage de Minilibx  
    -Afficher une fenetre graphique  
@@ -9,11 +9,15 @@
    -Gestion de keybord input et mouse input  
    -Etc..
 
-## Checklist so_long
+## ✅ Checklist so_long
 
 1) Lecture de la map
 2) Check errors
 3) Initialisation de minilibx
+
+## 🔖 Bibliographie 
+
+- https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long  
 
 
 
