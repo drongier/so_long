@@ -26,7 +26,8 @@
 
 ## 🔖 Bibliographie 
 
-- https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long  
+- https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long
+- https://github.com/augustobecker/so_long_tester (tester)  
 
 
 
