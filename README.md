@@ -15,7 +15,7 @@
 2) Check errors
 3) Initialisation de minilibx
 
-## Test des bugs 
+## ⚠️ Test des bugs 
 
 - Running into a wall and see if you're blocked or if the movements counter increase while you're stucked.  
 - Go to the exit withou collecting all the coins.  
