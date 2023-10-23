@@ -12,8 +12,9 @@
 ## ✅ Checklist so_long
 
 1) Lecture de la map
-2) Check errors
-3) Initialisation de minilibx
+2) Check errors+
+3) Add in 2d array
+4) Initialisation de minilibx
 
 ## ⚠️ Test des bugs 
 
