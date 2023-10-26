@@ -19,6 +19,7 @@
 
 ## ⚠️ Test des bugs 
 
+- Faire des testes avec map vide !
 - Running into a wall and see if you're blocked or if the movements counter increase while you're stucked.  
 - Go to the exit withou collecting all the coins.  
 - Go through the same path at least one time.  
