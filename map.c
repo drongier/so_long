@@ -6,5 +6,6 @@ int read_map(t_data *data, char **argv)
     if (data->fd < 0)
         return (0);
     
+    //testgit
 
 }
