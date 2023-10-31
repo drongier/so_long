@@ -1,12 +1,13 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
+#include "libraries/libft/libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <X11/X.h>
 #include <X11/keysym.h>
 #include <fcntl.h>
-#include <string.h> 
+#include <string.h>
 #define MLX_ERROR 1
 
 typedef struct s_data
@@ -21,14 +22,17 @@ typedef struct s_data
     int player_y;
 
     char **map;
+    char *buffer;
+    char *buffer_map;
 
 
 
 } t_data;
 
-int read_map(t_data *data, char **argv);
+char    **read_map(t_data *data, char **argv);
+int    *check_errors(t_data *data);
 
-
+#endif
 // cc so_long.c -lX11 -lXext -lmlx
 
 

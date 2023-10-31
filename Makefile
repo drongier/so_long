@@ -1,11 +1,28 @@
 NAME = so_long
 
-INCLUDES = -I/usr/include -Imlx
- 
-.c.o:
-	$(CC) $(CFLAGS) -c -o $@ $< $(INCLUDES)
+CC = gcc
 
-MLX_FLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
- 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(MLX_FLAGS)
+CFLAGS = -Wall -Wextra -Werror
+
+SRC = so_long.c map.c check.c
+LIBRARY = libraries/libft/*.c
+
+OBJ = $(SRC:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) $(LIBRARY) $(OBJ) -o $(NAME)
+
+%.o: %.c
+	$(CC) -g $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
