@@ -1,4 +1,5 @@
 #include "so_long.h"
+#include "libraries/minilibx-linux/mlx.h"
 
 int main(int argc, char **argv)
 {
@@ -11,13 +12,10 @@ int main(int argc, char **argv)
 	}
 	read_map(&data, argv);
 	check_errors(&data);
-	// data.mlx_ptr = mlx_init();
-	// if (!data.mlx_ptr)
-	// 	return (1);
-	// data.win_ptr = mlx_new_window(data.mlx_ptr, 300, 300, "hi :)");
-	// if (!data.win_ptr)
-	// 	return (1);
-	// mlx_loop(data.mlx_ptr);
+	init_map(&data);
+	mlx_hook(data.win_ptr, 2, 1L<<0, &handle_key, &data);
+	mlx_loop(data.mlx_ptr);
+	mlx_loop_end(data.mlx_ptr);
 	
 	return (0);
 }
