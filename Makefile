@@ -6,10 +6,10 @@ CFLAGS = -Wall -Wextra -Werror
 
 MLX = -lmlx -lX11 -lXext
 
-SRC = so_long.c map.c check.c init_map.c draw_map.c handle_key.c exit_free.c
-LIBRARY = libraries/libft/*.c
+SRC = sources/*.c
+LIBRARY = libraries/libft/*.c libraries/ft_printf/*.c
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(patsubst %.c,%.o,$(wildcard $(SRC)))
 
 all: $(NAME)
 

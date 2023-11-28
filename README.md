@@ -26,6 +26,7 @@
 - Try to move with the arrow keys and with WASD.  
 - Check if the window closes when clicking the red cross on window's frame, same with Esc or Q.  
 - Try to minimize the window and open it again.  
+- Compile with -g3 -fsanitize=address to check segfault
 
 ## 🔖 Bibliographie 
 
