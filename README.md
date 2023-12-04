@@ -1,5 +1,7 @@
 # so_long
 
+## ✅ PROJECT VALIDATE 110/100
+
 ## 💡 Avant de commencer
 
 1) Decouverte et apprentissage de Minilibx  
