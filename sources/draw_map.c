@@ -42,6 +42,7 @@ int	map_draw(t_data *data)
 			x++;
 		}
 		y++;
+		printf("coucou");
 	}
 	return (0);
 }
