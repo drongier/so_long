@@ -13,7 +13,6 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <X11/X.h>
 # include <X11/keysym.h>
@@ -64,6 +63,7 @@ void	img_draw(t_data *data, void *image, int x, int y);
 void	exit_game(t_data *data);
 int		close_window(void *param);
 int		ft_printf(const char *str, ...);
-int		print_error(int i);
+int		print_error(int i, t_data *data);
+void	free_map(t_data *data);
 
 #endif

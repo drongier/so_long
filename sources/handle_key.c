@@ -43,7 +43,8 @@ void	player_move(t_data *data, int next_y, int next_x)
 	{
 		if (data->coins_count == 0)
 		{
-			ft_printf("Mouvement : %d\n", data->move_count);
+			ft_printf("YOU WIN !\n");
+			ft_printf("Moves : %d\n", data->move_count);
 			exit(0);
 		}
 		ft_printf("%d coins missing !!\n", data->coins_count);
@@ -69,21 +70,21 @@ int	handle_key(int keycode, t_data *data)
 {
 	data->prev_x = data->player_x;
 	data->prev_y = data->player_y;
-	if (keycode == XK_Up || keycode == XK_Down
-		|| keycode == XK_Left || keycode == XK_Right)
+	if (keycode == XK_w || keycode == XK_s
+		|| keycode == XK_a || keycode == XK_d)
 		data->move_count += 1;
 	if (keycode == XK_Escape)
 	{
 		mlx_destroy_window(data->mlx_ptr, data->win_ptr);
 		exit(0);
 	}
-	else if (keycode == XK_Up)
+	else if (keycode == XK_w)
 		player_move(data, data->player_y, data->player_x -= 1);
-	else if (keycode == XK_Down)
+	else if (keycode == XK_s)
 		player_move(data, data->player_y, data->player_x += 1);
-	else if (keycode == XK_Left)
+	else if (keycode == XK_a)
 		player_move(data, data->player_y -= 1, data->player_x);
-	else if (keycode == XK_Right)
+	else if (keycode == XK_d)
 		player_move(data, data->player_y += 1, data->player_x);
 	handle_count(data);
 	return (0);

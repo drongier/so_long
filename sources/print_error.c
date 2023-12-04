@@ -12,16 +12,28 @@
 
 #include "so_long.h"
 
-int	print_error(int i)
+int	print_error(int i, t_data *data)
 {
 	if (i == 1)
+	{
+		free_map(data);
 		ft_printf("Error !! There is wrong things on the map :)\n");
+	}
 	else if (i == 2)
+	{
+		free_map(data);
 		ft_printf("Error !! Map is not rectangular\n");
+	}
 	else if (i == 3)
+	{
+		free_map(data);
 		ft_printf("Error !! Somethings wrong with walls\n");
+	}
 	else if (i == 4)
+	{
+		free_map(data);
 		ft_printf("Error !! With numbers of params\n");
+	}
 	else if (i == 5)
 		ft_printf("Error !! Wrong Name map\n");
 	exit(0);

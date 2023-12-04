@@ -21,22 +21,22 @@ int	close_window(void *param)
 	exit(0);
 }
 
-void	free_map(char **map)
+void	free_map(t_data *data)
 {
 	int	i;
 
 	i = 0;
-	while (map[i] != NULL)
+	while (data->map[i] != NULL)
 	{
-		free(map[i]);
+		free(data->map[i]);
 		i++;
 	}
-	free(map);
+	free(data->map);
 }
 
 void	exit_game(t_data *data)
 {
-	free_map(data->map);
+	free_map(data);
 	mlx_destroy_image(data->mlx_ptr, data->spr_bg);
 	mlx_destroy_image(data->mlx_ptr, data->spr_coin);
 	mlx_destroy_image(data->mlx_ptr, data->spr_perso);

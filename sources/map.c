@@ -25,11 +25,14 @@ char	**read_map(t_data *data, char **argv)
 
 	data->fd = open(argv[1], O_RDONLY);
 	if (data->fd < 0)
-		print_error(5);
+		print_error(5, data);
 	data->buffer_map = ft_strdup("");
 	read = get_next_line(data->fd);
-	if (read == NULL)
+	if (read == NULL || read[0] == '\n')
+	{
+		free(read);
 		read_null(data);
+	}
 	while (read != NULL)
 	{
 		data->buffer = data->buffer_map;
